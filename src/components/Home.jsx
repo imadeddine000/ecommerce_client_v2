@@ -7,20 +7,20 @@ const Home = () => {
   return (
     <div className='h-auto'>
         <div className='bg-red-500 flex justify-center relative w-full h-20'>
-            <div className='bg-white rounded-md w-fit flex items-center absolute shadow p-4 top-[3.5rem] space-x-1 md:space-x-10 '>
+            <div className='bg-white rounded-md w-fit flex items-center absolute shadow p-1 sm:p-4 top-[3.5rem] space-x-1 md:space-x-10 '>
                <div className='flex items-center border-r-2 border-gray-200 space-x-1 md:space-x-5'>
                <div className='text-xl p-1'>
                     <BiSearch/>
                 </div>
                 <div className='flex items-center space-x-2'>
-                    <input className='text-sm md:text-xl outline-none pr-1 md:pr-8' type="text" placeholder='Type to Search ' />
+                    <input className='text-sm md:text-xl outline-none w-[7rem] sm:w-full md:pr-8 ' type="text" placeholder='Type to Search ' />
                     <div className='text-xl p-1 cursor-pointer hover:bg-gray-200 rounded-full'>
                     <AiFillCloseCircle/>
                     </div>
                 </div>
                </div>
                 <div>
-                    <select name='categories' className='bg-white cursor-pointer text-sm md:text-xl '>
+                    <select name='categories' className='bg-white cursor-pointer text-sm md:text-xl  sm:w-full '>
                         <option className=''>Categories</option>
                         <option>shoes</option>
                         <option>cars</option>

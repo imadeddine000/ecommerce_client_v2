@@ -10,7 +10,7 @@ const products=[
 
 const Products = () => {
   return (
-    <div className='bg-gray-100 md:px-20 flex flex-col md:flex-row p-5  '>
+    <div className='bg-gray-100 md:px-20 flex flex-col md:flex-row p-2  '>
         <div>
             <div className='hidden lg:flex flex-col  bg-white rounded-md shadow-md'>
                 <div className='p-4 flex justify-between border-b-[1px] border-gray-200 '>
@@ -40,11 +40,11 @@ const Products = () => {
 
         <div className='flex flex-col p-5 grow sm:justify-center'>
             <div className='flex justify-between items-center'>
-                <div className='text-sm md:text-xl'>
+                <div className='text-[10px] sm:text-xl'>
                     Found <span className='text-red-600 font-bold'>100</span> items on search
                 </div>
                 <div className='flex space-x-5 items-center'>
-                    <div className='text-sm md:text-xl'>
+                    <div className='text-[10px] sm:text-xl'>
                         <h1>Sort by</h1>
                     </div>
                     <div className='bg-red-600 p-2 pr-3 pl-3 rounded-full  text-sm md:text-xl '>
@@ -59,7 +59,7 @@ const Products = () => {
             </div>
 
             {/* product Card */}
-                <div className='p-4 sm:grid-cols-2 grid gap-4  md:grid-cols-3 '>
+                <div className='p-2 sm:grid-cols-2 grid gap-2  md:grid-cols-3 '>
                     {products&&products.map((product,index)=>(
                         <>
                             <ProductCard product={product} key={index}/>

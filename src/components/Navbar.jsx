@@ -6,26 +6,38 @@ import {FaHeadphones} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
-    <div className='flex flex-row justify-between items-center  p-2  pl-2 bg-white shadow-md pr-2 '>
+    <div className='flex flex-row justify-between items-center  p-1  pl-2 bg-white shadow-md pr-2  '>
         <div className='text-sm p-2 font-bold border-r-2 border-gray-200 '>
             <Link to='/'>
                 Shopping
             </Link>
         </div>
-        <div className='flex items-center space-x-8 '>
-            <div className='hidden md:flex border-2 border-gray-200 rounded-full p-1 '>
+        <div className='flex space-x-8 flex-col md:flex-row '>
+            <div className='flex border-2 border-gray-200 rounded-full p-1 '>
                 <div className='flex space-x-2 font-bold text-md'>
-                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer'>
+                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer flex items-center'>
+                        <button>
                         <FiSettings/>
+                        </button>
                     </div>
-                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer'>
-                        <BsHandbag/>
+                    <div className='p-2 relative hover:bg-gray-200 rounded-full cursor-pointer flex items-center'>
+                        <button className=''>
+                            <BsHandbag/>
+                        </button>
+                        <div className='text-[12px] text-white  absolute  top-0 right-0 bg-red-600 rounded-full w-4 h-4 items-center flex justify-center'>
+                            <span className='font-bold'>2</span>
+                        </div>
+
                     </div>
-                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer'>
-                        <BiBell/>
+                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer flex items-center'>
+                        <button>
+                            <BiBell/>
+                        </button>
                     </div>
-                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer'>
-                        <FaHeadphones/>
+                    <div className='p-2 hover:bg-gray-200 rounded-full cursor-pointer flex items-center'>
+                        <button>
+                            <FaHeadphones/>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -37,13 +49,7 @@ const Navbar = () => {
                     </span>
                 </div>
             </div>
-            <div>
-                <div className='bg-black  text-white shadow font-bold hover:bg-gray-800 p-2 cursor-pointer rounded-full '>
-                    <Link to='signup'>
-                        Become A Seller
-                    </Link>
-                </div>
-            </div>
+           
         </div>
     </div>
   )
