@@ -1,10 +1,17 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import {FiSettings} from 'react-icons/fi'
 import {BsHandbag} from 'react-icons/bs'
 import {BiBell} from 'react-icons/bi'
 import {FaHeadphones} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import CartDrawer from './CartDrawer'
+import { useDisclosure } from '@chakra-ui/react'
+
 const Navbar = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
+  
+    const [cartItems, setcartItems] = useState(0);
   return (
     <div className='flex flex-row justify-between items-center  p-1  pl-2 bg-white shadow-md pr-2  '>
         <div className='text-sm p-2 font-bold border-r-2 border-gray-200 '>
@@ -21,11 +28,11 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className='p-2 relative hover:bg-gray-200 rounded-full cursor-pointer flex items-center'>
-                        <button className=''>
+                        <button className='' onClick={onOpen} ref={btnRef}>
                             <BsHandbag/>
                         </button>
                         <div className='text-[12px] text-white  absolute  top-0 right-0 bg-red-600 rounded-full w-4 h-4 items-center flex justify-center'>
-                            <span className='font-bold'>2</span>
+                            <span className='font-bold'>{cartItems}</span>
                         </div>
 
                     </div>
@@ -51,6 +58,7 @@ const Navbar = () => {
             </div>
            
         </div>
+        <CartDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef}/>
     </div>
   )
 }

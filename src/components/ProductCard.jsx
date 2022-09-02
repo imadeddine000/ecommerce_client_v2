@@ -3,6 +3,8 @@ import {AiFillStar} from 'react-icons/ai'
 import {MdLocationPin} from 'react-icons/md'
 import {FaShoppingCart} from 'react-icons/fa'
 const ProductCard = ({product}) => {
+    const handlePurchase=(product)=>{
+       }
   return (
     <div className='bg-white rounded-md shadow-sm cursor-pointer hover:shadow-2xl'>
         <div className='relative  rounded-md  '>
@@ -51,7 +53,9 @@ const ProductCard = ({product}) => {
             </div>
         </div>
         <div className='p-2' >
-            <button className='flex bg-red-500 p-3 justify-center hover:bg-red-400 cursor-pointer pr-4 items-center pl-4 rounded-md shadow-md space-x-5 font-bold w-full  '>
+            <button className='flex bg-red-500 p-3 justify-center hover:bg-red-400 cursor-pointer pr-4 items-center pl-4 rounded-md shadow-md space-x-5 font-bold w-full  '
+                onClick={()=>handlePurchase(product)}
+            >
                 <div className='text-white'>
                     <FaShoppingCart/>
                  </div>

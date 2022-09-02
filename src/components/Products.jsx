@@ -3,8 +3,8 @@ import ProductCard from './ProductCard'
 
 const products=[
     {name:'Nike air force',image:'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmlrZSUyMGFpciUyMGZvcmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',price:'99',status:'available',rating:'4.3',address:'ouled aissa ,boumerdes algeria'},
-    {name:'Nike air force',image:'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',price:'99',status:'not available',rating:'4.3',address:'ouled aissa ,boumerdes algeria'},
-    {name:'Nike air force',image:'https://images.unsplash.com/photo-1617659512089-6fdec6c54406?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',price:'99',status:'available',rating:'4.3',address:'ouled aissa ,boumerdes algeria'}
+    {name:'Nike air force2',image:'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',price:'99',status:'not available',rating:'4.3',address:'ouled aissa ,boumerdes algeria'},
+    {name:'Nike air force3',image:'https://images.unsplash.com/photo-1617659512089-6fdec6c54406?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',price:'99',status:'available',rating:'4.3',address:'ouled aissa ,boumerdes algeria'}
 
 ]
 
